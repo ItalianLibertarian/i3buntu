@@ -109,7 +109,6 @@ apt-get install -y libproxy1-plugin-gsettings
 apt-get install -y libappindicator3-1
 apt-get install -y gir1.2-appindicator3-0.1 gdebi
 apt-get install -y firefox
-apt-get install -y virtualbox
 apt-get install -y vagrant
 apt-get install -y zip
 # apt-get install -y caffeine
