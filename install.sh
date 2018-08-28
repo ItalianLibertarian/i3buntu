@@ -6,7 +6,7 @@
 
 
 ###### Place the default wallpaper in $HOME directory
-cp wallpaper.jpg ~/.wallpaper.jpg
+#cp wallpaper.jpg ~/.wallpaper.jpg
 
 ###### Setup Ubuntu main and unofficial repositories as well as
 ###### other repositories which will simplify further installations
@@ -17,7 +17,7 @@ apt-get update # To get the latest package lists
 
 ###### Install main apps, drivers and dependencies
 apt-get install -y ubuntu-drivers-common
-# apt-get install -y ubuntu-restricted-extras
+apt-get install -y ubuntu-restricted-extras
 apt-get install -y ubuntu-docs
 apt-get install -y ttf-ubuntu-font-family
 apt-get install -y libnm-gtk-common
@@ -46,7 +46,7 @@ apt-get install -y wireless-tools
 apt-get install -y lightdm-gtk-greeter
 apt-get install -y lightdm-gtk-greeter-settings
 apt-get install -y overlay-scrollbar overlay-scrollbar-gtk2
-apt-get install -y brasero
+# apt-get install -y brasero
 apt-get install -y gnome-bluetooth
 apt-get install -y libbluetooth3 libgnome-bluetooth13
 apt-get install -y pulseaudio-module-bluetooth
@@ -108,7 +108,11 @@ apt-get install -y libgsettings-qt1
 apt-get install -y libproxy1-plugin-gsettings
 apt-get install -y libappindicator3-1
 apt-get install -y gir1.2-appindicator3-0.1 gdebi
-apt-get install -y caffeine
+apt-get install -y firefox
+apt-get install -y virtualbox
+apt-get install -y vagrant
+apt-get install -y zip
+# apt-get install -y caffeine
 
 ##### Get and install infinality (better font rendering)
 add-apt-repository ppa:no1wantdthisname/ppa -y
@@ -155,6 +159,9 @@ apt-get install -y moka-icon-theme
 mkdir ~/.config
 mkdir ~/.config/gtk-3.0
 mkdir ~/.config/i3
+
+###### Create directories inside $HOME
+mkdir ~/Documents ~/Downloads ~/Music ~/Pictures ~/Videos
 
 ###### Apply GTK theme, fonts, icon theme, login greeter
 ###### and i3
