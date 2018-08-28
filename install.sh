@@ -38,6 +38,13 @@ apt-get install -y policykit-1-gnome
 apt-get install -y vim vim-common
 apt-get install -y thunar
 apt-get install -y thunar-archive-plugin
+apt-get install -y ranger
+apt-get install -y mpv
+apt-get install -y newsboat
+apt-get install -y ntfs-3g
+apt-get install -y youtube-dl
+apt-get install -y youtube-viewer
+apt-get install -y scrot
 apt-get install -y gnome-system-monitor gnome-system-tools
 apt-get install -y network-manager
 apt-get install -y network-manager-gnome
