@@ -1,3 +1,7 @@
+Fork
+============
+This is a small fork, check the original first.
+
 i3buntu
 ============
 
