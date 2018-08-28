@@ -37,6 +37,7 @@ apt-get install -y policykit-desktop-privileges
 apt-get install -y policykit-1-gnome
 apt-get install -y vim vim-common
 apt-get install -y thunar
+apt-get install -y thunar-archive-plugin
 apt-get install -y gnome-system-monitor gnome-system-tools
 apt-get install -y network-manager
 apt-get install -y network-manager-gnome
