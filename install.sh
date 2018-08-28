@@ -5,15 +5,12 @@
 #------------------------------------------------------------------#
 
 
-###### Place the default wallpaper in $HOME directory
-#cp wallpaper.jpg ~/.wallpaper.jpg
-
 ###### Setup Ubuntu main and unofficial repositories as well as
 ###### other repositories which will simplify further installations
-#cp -f sources.list ~/.sources.list
+cp -f sources.list ~/.sources.list
 
 ###### Update to the last package lists
-#apt-get update # To get the latest package lists
+apt-get update 
 
 declare -a packages=(
 	"ubuntu-drivers-common"
@@ -126,9 +123,6 @@ for package in "${packages[@]}"
 do
 	sudo apt-get install -y "$package"
 done;
-
-exit;
-
 
 ##### Get and install infinality (better font rendering)
 add-apt-repository ppa:no1wantdthisname/ppa -y
