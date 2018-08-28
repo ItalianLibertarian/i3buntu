@@ -33,10 +33,6 @@ deb http://ppa.launchpad.net/webupd8team/java/ubuntu vivid main
 ## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F24AEA9FB05498B7
 deb [arch=i386] http://repo.steampowered.com/steam/ precise steam
 
-#### Tor: anonymity online - https://www.torproject.org
-## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 886DDD89
-deb http://deb.torproject.org/torproject.org xenial main
-
 #### VirtualBox - http://www.virtualbox.org
 ## Run this command: wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc -O- | sudo apt-key add -
 deb http://download.virtualbox.org/virtualbox/debian xenial contrib
