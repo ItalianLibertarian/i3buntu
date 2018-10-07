@@ -49,7 +49,9 @@ apt-get install -y wireless-tools
 apt-get install -y lightdm-gtk-greeter
 apt-get install -y lightdm-gtk-greeter-settings
 apt-get install -y overlay-scrollbar overlay-scrollbar-gtk2
-apt-get install -y blueman
+apt-get install -y gnome-bluetooth
+apt-get install -y libbluetooth3 libgnome-bluetooth13
+apt-get install -y pulseaudio-module-bluetooth
 apt-get install -y pulseaudio-module-x11
 apt-get install -y totem-plugins gromit
 apt-get install -y gstreamer1.0-pulseaudio
@@ -57,7 +59,6 @@ apt-get install -y transmission-gtk
 apt-get install -y pactl xbacklight
 apt-get install -y feh gnome-icon-theme-full
 apt-get install -y rofi compton
-apt-get install -y gnome-terminal
 apt-get install -y gedit
 apt-get install -y git
 apt-get install -y i3 i3-wm i3blocks i3lock i3status
