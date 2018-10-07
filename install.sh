@@ -12,113 +12,108 @@ cp -f sources.list ~/.sources.list
 ###### Update to the last package lists
 apt-get update 
 
-declare -a packages=(
-	"ubuntu-drivers-common"
-	"ubuntu-restricted-extras"
-	"ubuntu-docs"
-	"ttf-ubuntu-font-family"
-	"libnm-gtk-common"
-	"ubuntu-wallpapers ubuntu-wallpapers-xenial"
-	"openssh-client"
-	"libstartup-notification0"
-	"evince evince-common"
-	"lightdm"
-	"antoconf automake"
-	"x11-xserver-utils"
-	"arandr"
-	"pavucontrol"
-	"dconf dconf-tools"
-	"python-gconf"
-	"lxappearance"
-	"policykit-desktop-privileges"
-	"policykit-1-gnome"
-	"vim vim-common"
-	"nautilus"
-	"ranger"
-	"mpv"
-	"newsboat"
-	"ntfs-3g"
-	"youtube-dl"
-	"youtube-viewer"
-	"scrot"
-	"gnome-system-monitor gnome-system-tools"
-	"network-manager"
-	"network-manager-gnome"
-	"network-manager-openvpn"
-	"network-manager-openvpn-gnome"
-	"wireless-tools"
-	"lightdm-gtk-greeter"
-	"lightdm-gtk-greeter-settings"
-	"overlay-scrollbar overlay-scrollbar-gtk2"
-	"blueman"
-	"pulseaudio-module-x11"
-	"totem-plugins gromit"
-	"gstreamer1.0-pulseaudio"
-	"transmission-gtk"
-	"pactl xbacklight"
-	"feh gnome-icon-theme-full"
-	"rofi compton"
-	"gnome-terminal"
-	"gedit"
-	"git"
-	"i3 i3-wm i3blocks i3lock i3status"
-	"xserver-xorg-video-intel"
-	"acpi-support"
-	"apport-gtk"
-	"cups cups-bsd cups-client cups-filters"
-	"foomatic-db-compressed-ppds"
-	"openprinting-ppds"
-	"bluez"
-	"bluez-cups"
-	"hplip"
-	"printer-driver-brlaser printer-driver-c2esp"
-	"printer-driver-foo2zjs"
-	"printer-driver-gutenprint"
-	"printer-driver-hpcups"
-	"printer-driver-min12xxw"
-	"printer-driver-pnm2ppa"
-	"printer-driver-postscript-hp"
-	"printer-driver-ptouch printer-driver-pxljr"
-	"printer-driver-sag-gdi printer-driver-splix"
-	"system-config-printer-gnome"
-	"indicator-printers"
-	"python3-aptdaemon.pkcompat"
-	"evince evince-common"
-	"libssh-4 libnm-glib-vpn1"
-	"fonts-arphic-ukai fonts-arphic-uming"
-	"fonts-dejavu-core fonts-freefont-ttf"
-	"fonts-guru fonts-guru-extra fonts-kacst"
-	"fonts-kacst-one fonts-khmeros-core"
-	"fonts-liberation fonts-opensymbol"
-	"fonts-nanum fonts-stix fonts-symbola"
-	"xfonts-base xfonts-encodings"
-	"xfonts-scalable xfonts-utils"
-	"libxfont1 libfont-afm-perl"
-	"libfontconfig1 libfontembed1"
-	"libfontenc1 gnome-font-viewer"
-	"fontconfig fontconfig-config"
-	"dmz-cursor-theme libwayland-cursor0"
-	"libxcursor1 xcursor-themes"
-	"mousetweaks"
-	"laptop-detect"
-	"update-inetd update-notifier"
-	"update-notifier-common"
-	"usb-creator-common usb-creator-gtk"
-	"gnome-power-manager"
-	"libgsettings-qt1"
-	"libproxy1-plugin-gsettings"
-	"libappindicator3-1"
-	"gir1.2-appindicator3-0.1 gdebi"
-	"firefox"
-	"virtualbox"
-	"vagrant"
-	"zip"
-	"gparted"
-	"baobab"
-	"gnome-calendar"
-	"gnome-contacts"
-	"evolution"
-);
+apt-get install -y ubuntu-drivers-common
+apt-get install -y ubuntu-restricted-extras
+apt-get install -y ubuntu-docs
+apt-get install -y ttf-ubuntu-font-family
+apt-get install -y libnm-gtk-common
+apt-get install -y ubuntu-wallpapers ubuntu-wallpapers-xenial
+apt-get install -y openssh-client
+apt-get install -y libstartup-notification0
+apt-get install -y evince evince-common
+apt-get install -y lightdm
+apt-get install -y antoconf automake
+apt-get install -y x11-xserver-utils
+apt-get install -y arandr
+apt-get install -y pavucontrol
+apt-get install -y dconf dconf-tools
+apt-get install -y python-gconf
+apt-get install -y lxappearance
+apt-get install -y policykit-desktop-privileges
+apt-get install -y policykit-1-gnome
+apt-get install -y vim vim-common
+apt-get install -y nautilus
+apt-get install -y ranger
+apt-get install -y mpv
+apt-get install -y newsboat
+apt-get install -y ntfs-3g
+apt-get install -y youtube-dl
+apt-get install -y youtube-viewer
+apt-get install -y scrot
+apt-get install -y gnome-system-monitor gnome-system-tools
+apt-get install -y network-manager
+apt-get install -y network-manager-gnome
+apt-get install -y network-manager-openvpn
+apt-get install -y network-manager-openvpn-gnome
+apt-get install -y wireless-tools
+apt-get install -y lightdm-gtk-greeter
+apt-get install -y lightdm-gtk-greeter-settings
+apt-get install -y overlay-scrollbar overlay-scrollbar-gtk2
+apt-get install -y blueman
+apt-get install -y pulseaudio-module-x11
+apt-get install -y totem-plugins gromit
+apt-get install -y gstreamer1.0-pulseaudio
+apt-get install -y transmission-gtk
+apt-get install -y pactl xbacklight
+apt-get install -y feh gnome-icon-theme-full
+apt-get install -y rofi compton
+apt-get install -y gnome-terminal
+apt-get install -y gedit
+apt-get install -y git
+apt-get install -y i3 i3-wm i3blocks i3lock i3status
+apt-get install -y xserver-xorg-video-intel
+apt-get install -y acpi-support
+apt-get install -y apport-gtk
+apt-get install -y cups cups-bsd cups-client cups-filters
+apt-get install -y foomatic-db-compressed-ppds
+apt-get install -y openprinting-ppds
+apt-get install -y bluez
+apt-get install -y bluez-cups
+apt-get install -y hplip
+apt-get install -y printer-driver-brlaser printer-driver-c2esp
+apt-get install -y printer-driver-foo2zjs
+apt-get install -y printer-driver-gutenprint
+apt-get install -y printer-driver-hpcups
+apt-get install -y printer-driver-min12xxw
+apt-get install -y printer-driver-pnm2ppa
+apt-get install -y printer-driver-postscript-hp
+apt-get install -y printer-driver-ptouch printer-driver-pxljr
+apt-get install -y printer-driver-sag-gdi printer-driver-splix
+apt-get install -y system-config-printer-gnome
+apt-get install -y indicator-printers
+apt-get install -y python3-aptdaemon.pkcompat
+apt-get install -y evince evince-common
+apt-get install -y libssh-4 libnm-glib-vpn1
+apt-get install -y fonts-arphic-ukai fonts-arphic-uming
+apt-get install -y fonts-dejavu-core fonts-freefont-ttf
+apt-get install -y fonts-guru fonts-guru-extra fonts-kacst
+apt-get install -y fonts-kacst-one fonts-khmeros-core
+apt-get install -y fonts-liberation fonts-opensymbol
+apt-get install -y fonts-nanum fonts-stix fonts-symbola
+apt-get install -y xfonts-base xfonts-encodings
+apt-get install -y xfonts-scalable xfonts-utils
+apt-get install -y libxfont1 libfont-afm-perl
+apt-get install -y libfontconfig1 libfontembed1
+apt-get install -y libfontenc1 gnome-font-viewer
+apt-get install -y fontconfig fontconfig-config
+apt-get install -y dmz-cursor-theme libwayland-cursor0
+apt-get install -y libxcursor1 xcursor-themes
+apt-get install -y mousetweaks
+apt-get install -y thunar
+apt-get install -y laptop-detect
+apt-get install -y update-inetd update-notifier
+apt-get install -y update-notifier-common
+apt-get install -y usb-creator-common usb-creator-gtk
+apt-get install -y gnome-power-manager
+apt-get install -y libgsettings-qt1
+apt-get install -y libproxy1-plugin-gsettings
+apt-get install -y libappindicator3-1
+apt-get install -y gir1.2-appindicator3-0.1 gdebi
+apt-get install -y firefox
+apt-get install -y virtualbox
+apt-get install -y zip
+apt-get install -y gparted
+apt-get install -y baobab
 
 ###### Install main apps, drivers and dependencies
 
