@@ -173,10 +173,19 @@ mkdir ~/Documents ~/Downloads ~/Music ~/Pictures ~/Videos
 
 ###### Apply GTK theme, fonts, icon theme, login greeter
 ###### and i3
-cp -f ~/i3buntu-master/configs/gtk/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
-cp -f ~/i3buntu-master/configs/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
-cp -f ~/i3buntu-master/configs/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
-cp -f ~/i3buntu-master/configs/i3/config ~/.config/i3/config
+cp -f ~/i3buntu/configs/gtk/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
+cp -f ~/i3buntu/configs/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
+cp -f ~/i3buntu/configs/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+cp -f ~/i3buntu/configs/i3/config ~/.config/i3/config
+cp -f ~/i3buntu/Xresources ~/.Xresources
+cp -f ~/i3buntu/bashrc ~/.bashrc
+cp -f ~/i3buntu/bash_aliases ~/.bash_aliases
+
+## Vim
+cp -f ~/i3buntu/configs/vim/vimrc ~.vimrc
+mkdir ~/.vim
+mkdir ~/.vim/colors/
+cp -f ~/i3buntu/configs/vim/colors/thinkpad.vim ~/.vim/colors/
 
 ###### Set appropriate user permissions
 chown $(whoami):$(whoami) -R /home/$(whoami)/
